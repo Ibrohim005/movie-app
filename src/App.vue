@@ -23,7 +23,8 @@
         v-for="(item, index) in searchResults.results"
         :key="index"
       >
-        <div class="card">
+        <a :href="item.link.url" target="_blank" class="pe-auto">
+          <div class="card">
           <img
             class="card__img"
             :src="
@@ -48,6 +49,7 @@
             </div>
           </div>
         </div>
+        </a>
       </div>
     </div>
   </div>
